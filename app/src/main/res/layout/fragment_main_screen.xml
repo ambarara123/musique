@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:clickable="true"
+    tools:context="com.akumar.musique.fragment.MainScreenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.gjiazhe.multichoicescirclebutton.MultiChoicesCircleButton
+        android:id="@+id/multiChoicesCircleButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mccb_collapseRadius="40dp"
+        app:mccb_expandRadius="120dp"
+        app:mccb_icon="@drawable/ic_launcher_background"
+        app:mccb_text="Choose"
+        app:mccb_buttonColor="@color/colorAccent"
+        app:layout_behavior="@string/multi_choices_circle_button_behavior"/>
+
+</RelativeLayout>
