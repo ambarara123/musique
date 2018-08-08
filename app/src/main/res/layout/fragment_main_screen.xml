@@ -3,11 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#fff"
+    android:background="#591d1d"
     android:clickable="true"
     tools:context="com.akumar.musique.fragment.MainScreenFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <com.gjiazhe.multichoicescirclebutton.MultiChoicesCircleButton
         android:id="@+id/multiChoicesCircleButton"
         android:layout_width="match_parent"
@@ -17,6 +16,20 @@
         app:mccb_icon="@drawable/ic_launcher_background"
         app:mccb_text="Choose"
         app:mccb_buttonColor="@color/colorAccent"
+        app:mccb_enableParallax="true"
         app:layout_behavior="@string/multi_choices_circle_button_behavior"/>
+
+    <co.mobiwise.library.MusicPlayerView
+        android:id="@+id/mpv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:textSize = "14sp"
+        app:textColor = "#80FFFFFF"
+        app:buttonColor = "#FF0028"
+        app:progressLoadedColor = "#00815E"
+        app:progressEmptyColor = "#20FFFFFF"
+
+        />
 
 </RelativeLayout>
